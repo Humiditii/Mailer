@@ -32,9 +32,9 @@ Persistent API Endpoints is hosted at (https://mailer-api-app.herokuapp.com/)
 
 <tr><th>HTTP VERB</th><th>ENDPOINT</th><th>TASK</th></tr>
 
-<tr><td>POST</td> <td>/send/to_many</td> <td>Send Mail to Many Users</td></tr>
+<tr><td>POST</td> <td>/api/send/to_many</td> <td>Send Mail to Many Users</td></tr>
 
-<tr><td>POST</td> <td>/send/to_one</td> <td>Send Mail to a User</td></tr>
+<tr><td>POST</td> <td>/api/send/to_one</td> <td>Send Mail to a User</td></tr>
 
 
 #### Send a mail to one client
