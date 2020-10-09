@@ -1,4 +1,4 @@
-# event-mgt-api
+# Mailer-Api
 SEND ANONYMOUS MAILS API
 
 
@@ -44,7 +44,7 @@ Persistent API Endpoints is hosted at #coming soon
 ### Installation 
 
 * Create a folder on your computer and navigate to the folder using your terminal
-* git clone https://github.com/Plentheon-Technologies/event-mgt-api.git
+* git clone https://github.com/Humiditii/Mailer.git
 * Run `npm install` to install packages and dependencies
 * Run `npm run dev` to start the server
 * Navigate to http://localhost:3333/ on your browser to have access to the  API
@@ -62,5 +62,5 @@ Persistent API Endpoints is hosted at #coming soon
 
 
 ### Author 
-Plentheon Technologies Backend Team
+Babatunde A.O.
 
