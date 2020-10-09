@@ -18,7 +18,7 @@ This API helps you to send mails to anyone without requiring you to signin to an
 
 ### Persistent API Enpoint
 Api entry point (http://localhost:3333/api/v1/send/to_many)
-Persistent API Endpoints is hosted at #coming soon
+Persistent API Endpoints is hosted at (https://mailer-api-app.herokuapp.com/)
 ### Features
 * Send Mails to a single User
 * Send Mails to Multiple Users at a go
