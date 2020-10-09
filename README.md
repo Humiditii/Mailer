@@ -68,7 +68,7 @@ Persistent API Endpoints is hosted at #coming soon
 
 * Method - POST
 
-* URL - http://localhost:3000/api/v1/send/to_one
+* URL - http://localhost:3000/api/v1/send/to_many
 
 * Sample Request
 
