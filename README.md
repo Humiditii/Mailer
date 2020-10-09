@@ -37,6 +37,64 @@ Persistent API Endpoints is hosted at #coming soon
 <tr><td>POST</td> <td>/send/to_one</td> <td>Send Mail to a User</td></tr>
 
 
+#### Send a mail to one client
+
+* Method - POST
+
+* URL - http://localhost:3000/api/v1/send/to_one
+
+* Sample Request
+
+```
+{
+    "mail": "abc@gmail.com",
+    "message": "dshbcd hchb ch che vh ch hd vhv",
+    "subject": "End SARS",
+    "from": "anonymous@nigeria"
+}
+```
+
+* Sample Response
+
+```
+{
+   
+    "message": "Message sent to abc@gmail.com",
+    "object": "sent"
+}
+```
+
+#### Send a mail to multiple client
+
+* Method - POST
+
+* URL - http://localhost:3000/api/v1/send/to_one
+
+* Sample Request
+
+```
+{
+    "mails": ["abc@gmail.com", "xyz@gmail.com"],
+    "message": "dshbcd hchb ch che vh ch hd vhv",
+    "subject": "End SARS",
+    "from": "anonymous@nigeria"
+}
+```
+
+* Sample Response
+
+```
+{
+   
+    "message": [
+        "message sent to minister1@gmail.com",
+        "message sent to minister2@gmail.com"
+    ]
+}
+```
+
+
+
 </table>
 
 ## Getting Started
@@ -63,4 +121,8 @@ Persistent API Endpoints is hosted at #coming soon
 
 ### Author 
 Babatunde A.O.
+
+
+
+
 

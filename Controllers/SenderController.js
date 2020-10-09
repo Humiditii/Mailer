@@ -12,7 +12,7 @@ class SenderController {
             html: `<b> ${message} </b>`
         }).then( sent => {
             return res.status(200).json({
-                message: 'Message sent',
+                message:`Message sent to ${message}`,
                 object: sent
             })
         } ).catch( err => {
