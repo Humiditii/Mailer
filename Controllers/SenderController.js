@@ -1,23 +1,38 @@
 import Util from '../Utils/Utility';
 
 class SenderController {
-
     static sendToOne (req, res, next){
-        const {mail, message, subject, from  } = req.body;
+        const {mail, message, subject, from, html=false } = req.body;
 
-        Util.mailer().sendMail({
-            to: mail,
-            from: from,
-            subject: subject,
-            html: `<b> ${message} </b>`
-        }).then( sent => {
-            return res.status(200).json({
-                message:`Message sent to ${mail}`,
-                object: sent
-            })
-        } ).catch( err => {
-            return Util.appError(err, next)
-        } )
+        if(!html){
+            Util.mailer().sendMail({
+                to: mail,
+                from: from,
+                subject: subject,
+                html: `<b> ${message} </b>`
+            }).then( sent => {
+                return res.status(200).json({
+                    message:`Message sent to ${mail}`,
+                    object: sent
+                })
+            } ).catch( err => {
+                return Util.appError(err, next)
+            } )
+        }else{
+            Util.mailer().sendMail({
+                to: mail,
+                from: from,
+                subject: subject,
+                html: `${message}`
+            }).then( sent => {
+                return res.status(200).json({
+                    message:`Message sent to ${mail}`,
+                    object: sent
+                })
+            } ).catch( err => {
+                return Util.appError(err, next)
+            } )
+        }
 
     }
 
